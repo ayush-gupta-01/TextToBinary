@@ -6,7 +6,7 @@
 
 body {
   font-family: sans-serif;
-  background: linear-gradient(rgb(236, 236, 198),rgb(235, 190, 108));
+  background: linear-gradient(rgb(236, 236, 198), rgb(235, 190, 108));
   background-attachment: fixed;
 }
 
@@ -79,7 +79,7 @@ textarea::placeholder {
 }
 
 .final-answer {
-  max-width: 70%;
+  max-width: 60%;
   max-height: 20vh;
   letter-spacing: 1px;
   font-weight: bold;
@@ -109,20 +109,26 @@ textarea::placeholder {
   text-decoration: underline;
 }
 
-@media screen and (max-width : 800px) {
+@media screen and (max-width: 800px) {
   textarea {
     width: 60%;
   }
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width: 600px) {
   textarea {
     width: 80%;
   }
+  .final-answer {
+    max-width: 75%;
+  }
 }
 
-@media screen and (max-width : 450px)  {
-  nav a{
+@media screen and (max-width: 450px) {
+  nav a {
     font-size: 1rem;
+  }
+  .final-answer {
+    max-width: 90%;
   }
 }

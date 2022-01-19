@@ -29,4 +29,16 @@ document.querySelector(".to-text").addEventListener("submit", function (event) {
   div.setAttribute("class", "final-answer");
   div.innerText = string;
   document.querySelector(".show").appendChild(div);
+
+  // document.querySelector(".copy-btn").disabled = false;
 });
+
+// function Copy() {
+//   var range = document.createRange();
+//   range.selectNode(document.querySelector(".final-answer"));
+//   window.getSelection().removeAllRanges(); // clear current selection
+//   window.getSelection().addRange(range); // to select text
+//   document.execCommand("copy");
+//   window.getSelection().removeAllRanges(); // to deselect
+//   // alert("Copied");
+// }
